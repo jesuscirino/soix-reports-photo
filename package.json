@@ -1,0 +1,27 @@
+{
+  "name": "soix-reports-photo",
+  "version": "1.0.0",
+  "description": "Generación automatizada de reportes con salida a PDF",
+  "main": "index.js",
+  "scripts": {
+    "pdf": "babel-node index.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": []
+  },
+  "repository": "https://github.com/jesuscirino/soix-reports-photo.git",
+  "author": "jesuscirino <jesuscirino@gmail.com>",
+  "license": "GNU General Public Licence v3.0",
+  "private": false,
+  "dependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "pdfkit": "^0.10.0"
+  }
+}
