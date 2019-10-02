@@ -1,0 +1,5 @@
+{
+  "destination": "./results/resultado.pdf",
+  "_margins": { "top": 0.5, "bottom": 0.5, "left": 1.5, "right": 1.5 },
+  "footer": "./config/PIE.png"
+}
