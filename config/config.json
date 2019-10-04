@@ -1,5 +1,16 @@
 {
   "destination": "./results/resultado.pdf",
   "_margins": { "top": 0.5, "bottom": 0.5, "left": 1.5, "right": 1.5 },
-  "footer": "./config/PIE.png"
+  "footer": "./config/footer.png",
+  "header": "./config/header.png",
+  "logo": "./config/logo.png",
+  "info": {
+    "cel11": "Cliente: ",
+    "cel12": "Rancho El Ángel de tu Salud, Lagunillas, Zihuateutla, Puebla",
+    "cel21": "Proyecto: ",
+    "cel22": "ALumbrado Público 2019 etc, etc, etc,etc,etcetc, etc, etc,etc,etc..etc, etc, etc,etc,etc.",
+    "cel31": "Lugar y Fecha: ",
+    "cel32": "Xicotepec de Juárez, Pue. a 2 de Octubre de 2019",
+    "path": "../imgs/n1h"
+  }
 }
