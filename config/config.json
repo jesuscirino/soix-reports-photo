@@ -10,7 +10,8 @@
     "cel21": "Proyecto: ",
     "cel22": "ALumbrado Público 2019 etc, etc, etc,etc,etcetc, etc, etc,etc,etc..etc, etc, etc,etc,etc.",
     "cel31": "Lugar y Fecha: ",
-    "cel32": "Xicotepec de Juárez, Pue. a 2 de Octubre de 2019",
-    "path": "../imgs/n1h"
-  }
+    "cel32": "Xicotepec de Juárez, Pue. a 2 de Octubre de 2019"
+  },
+  "pathImage": "../imgs/n1h",
+  "configPos": "1-1-1"
 }

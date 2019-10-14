@@ -6,10 +6,17 @@ const {
   _margins,
   footer,
   header,
-  info
+  info,
+  pathImage,
+  configPos
 } = require("./config/config.json");
 import * as trace from "./lib/m1.js";
-
+console.log(pathImage);
+let arrImage = fs
+  .readdirSync(pathImage)
+  .filter(f => f.match(/(.png)|(.jpg)$/i))
+  .map(i => pathImage + "/" + i);
+//arrImage = arrImage.filter(f => f.match(/(.png)|(.jpg)$/i));
 // set margins
 const marginsPoints = trace.cmToPoints(_margins);
 
@@ -62,10 +69,12 @@ trace.coverPage(
 doc.on("pageAdded", () => {
   trace.header(doc, header, 0, 0, WIDTH);
   trace.footer(doc, footer, xCol1, HEIGHT, WIDTH);
-  trace.newCanvas(doc, 14, yCol1, WIDTH - 28, HEIGHT - (yCol1 + 45), cornerRad);
+  //trace.newCanvas(doc, 14, yCol1, WIDTH - 28, HEIGHT - (yCol1 + 45), cornerRad);
 });
-doc.addPage();
+/*doc.addPage();
 const r = trace.newRect(doc, 50, 50, 100, 100);
+trace.fitImage(doc, arrImage[0], ...r.dims);
 r.trace("#fffff");
-doc.addPage();
+doc.addPage();*/
+trace.setImages(doc, arrImage, configPos);
 doc.end();
